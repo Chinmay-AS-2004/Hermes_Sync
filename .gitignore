@@ -1,0 +1,101 @@
+# Credentials & secrets — NEVER commit
+auth.json
+.env
+.env.EXAMPLE
+
+# Runtime databases & state
+state.db
+state.db-shm
+state.db-wal
+shared-state.db
+shared-state.db-shm
+shared-state.db-wal
+projects.db
+projects.db-shm
+projects.db-wal
+kanban.db
+kanban.db-shm
+kanban.db-wal
+executions.db
+gateway.pid
+gateway_state.json
+processes.json
+auth.lock
+active_profile
+.update_check
+
+# User data — NEVER commit
+memories/
+sessions/
+logs/
+plans/
+workspace/
+home/
+
+# Caches & generated artifacts
+image_cache/
+audio_cache/
+document_cache/
+browser_screenshots/
+cache/
+models/
+runtimes/
+node/
+
+# Infrastructure & bundled tooling
+hermes-agent/
+.worktrees/
+profiles/
+bin/
+node_modules/
+tools/
+hermes-setup.exe
+bootstrap-cache/
+installs/
+assets/
+
+# User customization namespace
+local/
+
+# Checkpoints & backups
+checkpoints/
+sandboxes/
+backups/
+curator_backups/
+.curator_backups/
+
+# Shared auth, platform pairing, runtime state
+shared/
+platforms/
+gateway-service/
+locks/
+source-checks/
+runtime/
+state/
+telemetry/
+vault/
+bot_relay/
+channel_directory.json
+models_dev_cache.*
+provider_models_cache.json
+context_length_cache.yaml
+install_id
+spawn-ledger.json
+telegram_update_receipts_*
+gateway-starts.log
+desktop/
+pets/
+kanban/
+.plugin-update-checks/
+.skills_prompt_snapshot.json
+.clean_shutdown
+.env.lock
+.hermes-update-in-progress.lock
+.install_id.lock
+
+# Logs
+errors.log
+.hermes_history
+
+# WhatsApp bridge session (contains auth tokens)
+whatsapp/

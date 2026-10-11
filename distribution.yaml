@@ -1,0 +1,34 @@
+name: hermes-default
+version: 1.0.0
+description: "Chinmay's Hermes agent — exam prep, creative coding, homelab tinkering"
+hermes_requires: ">=0.12.0"
+author: "Chinmay"
+license: "MIT"
+
+env_requires:
+  - name: OPENAI_API_KEY
+    description: "OpenAI API key (for model access)"
+    required: true
+  - name: TELEGRAM_BOT_TOKEN
+    description: "Telegram bot token from @BotFather"
+    required: true
+  - name: TELEGRAM_ALLOWED_USERS
+    description: "Comma-separated Telegram user IDs allowed to talk to the bot"
+    required: true
+  - name: TELEGRAM_HOME_CHANNEL
+    description: "Default Telegram channel/thread for cron output"
+    required: false
+  - name: TELEGRAM_HOME_CHANNEL_THREAD_ID
+    description: "Thread ID within the home channel"
+    required: false
+  - name: WHATSAPP_ENABLED
+    description: "true to start the WhatsApp Baileys bridge"
+    required: false
+    default: "false"
+  - name: WHATSAPP_ALLOWED_USERS
+    description: "Comma-separated WhatsApp user IDs allowed"
+    required: false
+  - name: WHATSAPP_MODE
+    description: "self-chat or multi-user"
+    required: false
+    default: "self-chat"
