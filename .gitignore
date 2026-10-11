@@ -14,8 +14,7 @@ projects.db
 projects.db-shm
 projects.db-wal
 kanban.db
-kanban.db-shm
-kanban.db-wal
+kanban.db*
 executions.db
 gateway.pid
 gateway_state.json
@@ -23,6 +22,8 @@ processes.json
 auth.lock
 active_profile
 .update_check
+*.lock
+*.lock.*
 
 # User data — NEVER commit
 memories/
@@ -53,6 +54,9 @@ hermes-setup.exe
 bootstrap-cache/
 installs/
 assets/
+lsp/
+plugin-update-checks/
+.plugin-update-checks/
 
 # User customization namespace
 local/
@@ -63,6 +67,10 @@ sandboxes/
 backups/
 curator_backups/
 .curator_backups/
+
+# Internal skill state
+skills/.*
+skills/.locks/
 
 # Shared auth, platform pairing, runtime state
 shared/
